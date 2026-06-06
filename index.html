@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200X200.png" type="image/x-icon">
     <link rel="stylesheet" href="mediaqueries.css" />
     <script src="script.js" defer></script>
   </head>
@@ -19,7 +18,6 @@
           <li><a href="#about" >About</a></li>
           <li><a href="#experience" >Experience</a></li>
           <li><a href="#projects"  >Projects</a></li>
-          <li><a href="#education"  >Education</a></li>
           <li><a href="#contact" >Contact</a></li>
         </ul>
       </div>
@@ -37,7 +35,6 @@
             <li><a href="#about" onclick="toggleMenu();">About</a></li>
             <li><a href="#experience" onclick="toggleMenu();">Experience</a></li>
             <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
-            <li><a href="#education" onclick="toggleMenu();">Education</a></li>
             <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </div>
         </div>
@@ -63,15 +60,70 @@
       </div>
     </section>
     <section id="about">
-      <p class="section__text__p1">About me</p>
-      <h1 class="title">Welcome</h1>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
       <div class="section-container">
-         <div class="about_me_text">
-           <p>
-            I am a software engineer with a passion for creating innovative solutions to complex problems. With a strong background in computer science and experience in various programming languages, I have developed a diverse skill set that allows me to tackle challenges in different domains. I am constantly seeking opportunities to learn and grow as a developer, and I am excited to contribute my skills and expertise to impactful projects.
-          </p>
-         </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container" style="max-height: fit-content;">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Juniour Security Developer @ Virtuozzo GmbH</p><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmarketplace.whmcs.com%2Fgroup%2FJelastic%2Fimages%2Ficon200-001053e6699f237ccb4556f6127e9260.png&f=1&nofb=1&ipt=c9d91db18ad8ec8b729e31699caa6933fa32bf7188cc45ae192f0ef7115f81f9" alt="Virtuozzo" class="icon" style="height: 5rem" onclick="window.open('https://www.virtuozzo.com/', '_blank');"/>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree @ Constructor University<br/><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.k9KS24EyDK3E1C-P3WB-LAHaHa%3Fpid%3DApi&f=1&ipt=5ec2bcf51103c257fba9c813041b8116f9dc1718db86674da22f4ee0d4ccfd79&ipo=images" alt="Constructor University" class="icon" style="height: 5rem;" onclick="window.open('https://constructor.university', '_blank');"/></p>
+            </div>
+          </div>
+          <!--
+            details-container: 
+              A wrapper div that serves as the parent container for organizing and displaying
+              content sections (details) within the page layout.
+              
+            details-container-skills (child class):
+              A modifier/extension of the base details-container class that specifically styles
+              and organizes the skills section. It inherits the parent container's layout properties
+              while applying skill-specific styling and spacing.
+              
+            Hierarchy:
+              details-container (parent)
+                └── details-container-skills (child variant)
+                   └── Skills content (e.g., skill items, categories, descriptions)
+          -->
+          <div class="details-container-skills">
+            <h3>Skills</h3>
+            <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C" class="images">
+            <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"class="images">
+            <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"class="images">
+            <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"class="images">
+            <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript" class="images">
+            <img src="https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white" alt="Go" class="images">
+            <img src="https://img.shields.io/badge/Haskell-5e5086?style=for-the-badge&logo=haskell&logoColor=white" alt="Haskell" class="images">
+            <img src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white" alt="LaTeX" class="images">
+            <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" class="images">
+            <img src="https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash Script" class="images">
+            <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" class="images">
+            <img src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown" class="images">
+            <img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" class="images">
+            <img src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white" alt="Django" class="images">
+            <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" class="images">
+        </div>
       </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
   </body>
 </html> 

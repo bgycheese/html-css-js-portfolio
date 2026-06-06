@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 html {
@@ -207,7 +207,7 @@ section {
 }
 
 .section__text p{
-  font-weight: 600;
+  font-weight: 500;
 
 }
 
@@ -259,7 +259,7 @@ section {
 
 .btn {
   transition: all 0.3s ease;
-  font-weight: 600;
+  font-weight: 500;
   padding: 1rem;
   
   width: 8rem ;
@@ -292,4 +292,111 @@ section {
 .btn-color-2:hover {  
   border: rgb(255,255,255) 0.1rem solid;
 }
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 500px;
+  margin: auto 0;
+}
+.section__pic-container img {
+  height: 400px;
+  width: 400px;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+/* #about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.section__pic-container {
+  margin-right: 50rem;;
+  width: max-content;
+  height: fit-content;
+}
+
+
+.section-container img {
+  /* border-radius: 30%; */
+  /* width: 50vh; */
+  /* height: 500px; */
+  /* position: relative; */
+  /**
+   * position: relative;
+   * 
+   * Positions an element relative to its normal position in the document flow.
+   * The element still occupies space in the normal flow, but can be offset using
+   * top, right, bottom, and left properties without affecting other elements.
+   * Useful for fine-tuning the placement of elements or creating a positioning context
+   * for absolutely positioned child elements.
+   */
   
+
+
+/* } */
+
+.details-container-skills {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+.images {
+  margin: 0.5rem
+}
+

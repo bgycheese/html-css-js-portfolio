@@ -8,6 +8,6 @@ function toggleMenu() {
 }
 
 function iconClick(){
-    window.location.reload()    
+    window.location.replace("./")
 }
 
