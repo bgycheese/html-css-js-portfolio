@@ -406,7 +406,7 @@ section {
 
 /* correction of a div */
 
-#fucked-div {
+#experience-div {
   flex-direction: row;
   gap: 4rem;
   display: flex;
