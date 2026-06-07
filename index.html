@@ -1,90 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="A portfolio website showcasing my skills, experience, and projects." />
-    <meta name="author" content="Kamran Abbaslı" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <script src="script.js" defer></script>
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class= "logo" onclick="iconClick()" title="Chungus">Kamran Abbaslı</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about" >About</a></li>
-          <li><a href="#experience" >Experience</a></li>
-          <li><a href="#projects"  >Projects</a></li>
-          <li><a href="#contact" >Contact</a></li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="A portfolio website showcasing my skills, experience, and projects." />
+  <meta name="author" content="Kamran Abbaslı" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <script src="script.js" defer>
+    function iconClick() {
+
+    }
+  </script>
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo" onclick="iconClick()" title="Chungus">Kamran Abbaslı</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo" onclick="setTimeout(() => window.open('index.html', '_self'), 500);">Kamran Abbaslı</div>
+
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu();">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo" onclick="setTimeout(() => window.open('index.html', '_self'), 500);">Kamran Abbaslı</div>
-      
-        <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu();">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu();">About</a></li>
-            <li><a href="#experience" onclick="toggleMenu();">Experience</a></li>
-            <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
-        </div>
-        </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pick-container">
-          <img src="./assets/Kamran Abbasli.png" alt="Profile Picture" title="Sexy ahh man" class="profile__picture" />
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu();">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
       </div>
-      <div class="section__text">
-        <p class="section__text__p1">
-          Hi, I'm 
-        </p>
-        <h1 class="title">Kamran Abbasli</h1>
-        <p class="occupation">Software Engineer</p>
-        <div class="btn-container">
-          <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf');">Download CV</button>
-          <button class="btn btn-color-1" onclick="window.location.href='#about';">Contact Info</button>
-        </div>
-        <div id="socials-container">
-          <img src="./assets/github.png" alt="My github" class="icon" onclick="window.open('https://github.com/bgycheese', '_blank');">
-          <img src="./assets/linkedin.png" alt="My linkedin" class="icon" onclick="window.open('https://linkedin.com/', '_blank');">
-        </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pick-container">
+      <img src="./assets/Kamran Abbasli.png" alt="Profile Picture" title="Sexy ahh man" class="profile__picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">
+        Hi, I'm
+      </p>
+      <h1 class="title">Kamran Abbasli</h1>
+      <p class="occupation">Software Engineer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Resume.pdf');">Download CV</button>
+        <button class="btn btn-color-1" onclick="window.location.href='#contact';">Contact Info</button>
       </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container" style="max-height: fit-content;">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Juniour Security Developer @ Virtuozzo GmbH</p><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmarketplace.whmcs.com%2Fgroup%2FJelastic%2Fimages%2Ficon200-001053e6699f237ccb4556f6127e9260.png&f=1&nofb=1&ipt=c9d91db18ad8ec8b729e31699caa6933fa32bf7188cc45ae192f0ef7115f81f9" alt="Virtuozzo" class="icon" style="height: 5rem" onclick="window.open('https://www.virtuozzo.com/', '_blank');"/>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree @ Constructor University<br/><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.k9KS24EyDK3E1C-P3WB-LAHaHa%3Fpid%3DApi&f=1&ipt=5ec2bcf51103c257fba9c813041b8116f9dc1718db86674da22f4ee0d4ccfd79&ipo=images" alt="Constructor University" class="icon" style="height: 5rem;" onclick="window.open('https://constructor.university', '_blank');"/></p>
-            </div>
+      <div id="socials-container">
+        <img src="./assets/github.png" alt="My github" class="icon"
+          onclick="window.open('https://github.com/bgycheese', '_blank');">
+        <img src="./assets/linkedin.png" alt="My linkedin" class="icon"
+          onclick="window.open('https://linkedin.com/', '_blank');">
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container" style="max-height: fit-content;">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>Juniour Security Developer @ Virtuozzo GmbH</p><img
+              src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmarketplace.whmcs.com%2Fgroup%2FJelastic%2Fimages%2Ficon200-001053e6699f237ccb4556f6127e9260.png&f=1&nofb=1&ipt=c9d91db18ad8ec8b729e31699caa6933fa32bf7188cc45ae192f0ef7115f81f9"
+              alt="Virtuozzo" class="icon" style="height: 5rem"
+              onclick="window.open('https://www.virtuozzo.com/', '_blank');" />
           </div>
-          <!--
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc. Bachelors Degree @ Constructor University<br /><img
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.k9KS24EyDK3E1C-P3WB-LAHaHa%3Fpid%3DApi&f=1&ipt=5ec2bcf51103c257fba9c813041b8116f9dc1718db86674da22f4ee0d4ccfd79&ipo=images"
+                alt="Constructor University" class="icon" style="height: 5rem;"
+                onclick="window.open('https://constructor.university', '_blank');" /></p>
+          </div>
+        </div>
+        <!--
             details-container: 
               A wrapper div that serves as the parent container for organizing and displaying
               content sections (details) within the page layout.
@@ -99,31 +105,124 @@
                 └── details-container-skills (child variant)
                    └── Skills content (e.g., skill items, categories, descriptions)
           -->
-          <div class="details-container-skills">
-            <h3>Skills</h3>
-            <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C" class="images">
-            <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"class="images">
-            <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"class="images">
-            <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"class="images">
-            <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript" class="images">
-            <img src="https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white" alt="Go" class="images">
-            <img src="https://img.shields.io/badge/Haskell-5e5086?style=for-the-badge&logo=haskell&logoColor=white" alt="Haskell" class="images">
-            <img src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white" alt="LaTeX" class="images">
-            <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="Python" class="images">
-            <img src="https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash Script" class="images">
-            <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" class="images">
-            <img src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white" alt="Markdown" class="images">
-            <img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" class="images">
-            <img src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white" alt="Django" class="images">
-            <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" class="images">
+        <div class="details-container-skills">
+          <h3>Skills</h3>
+          <img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C"
+            class="images">
+          <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white"
+            alt="C++" class="images">
+          <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
+            alt="HTML5" class="images">
+          <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white"
+            alt="Java" class="images">
+          <img
+            src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
+            alt="JavaScript" class="images">
+          <img src="https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white" alt="Go"
+            class="images">
+          <img src="https://img.shields.io/badge/Haskell-5e5086?style=for-the-badge&logo=haskell&logoColor=white"
+            alt="Haskell" class="images">
+          <img src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white"
+            alt="LaTeX" class="images">
+          <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54"
+            alt="Python" class="images">
+          <img
+            src="https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white"
+            alt="Bash Script" class="images">
+          <img
+            src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
+            alt="TypeScript" class="images">
+          <img
+            src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"
+            alt="Markdown" class="images">
+          <img src="https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white"
+            alt="Flask" class="images">
+          <img src="https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white"
+            alt="Django" class="images">
+          <img src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white"
+            alt="MySQL" class="images">
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-  </body>
-</html> 
+
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">My Journey So Far</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container" id="fucked-div">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming Languages</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+              <div>
+                <h3>Java</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+              <div>
+                <h3>C</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+              <div>
+                <h3>C++</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+              <div>
+                <h3>Kotlin</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frameworks & Tools</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+              <div>
+                <h3>Docker</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience Icon" class="icon" />
+              <div>
+                <h3>Flask</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+  </section>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+    onclick="window.scrollTo(0, document.body.scrollHeight);" />
+
+</body>
+
+</html>
